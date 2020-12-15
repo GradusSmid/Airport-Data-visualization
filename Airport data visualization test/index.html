@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Final Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="https://kit.fontawesome.com/16a035c5f4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/Main.js"></script>
+</head>
+
+<body>
+    <!--loading spinner-->
+    <i class="fas fa-spinner"></i>
+    <H2>Infographic Airports</H2>
+    <!--wrap around data so it can be hidden-->
+    <section id="present">
+        <!--divide data into different airports-->
+        <section id="numberpeople2018">
+
+            <h1>amount of people who fly in 2018</h1>
+            <div id="buttons">
+                <button type=button class="allbutton">ALL</button>
+                <button type=button class="amsbutton">Amsterdam</button>
+                <button type=button class="rotbutton">Rotterdam</button>
+                <button type=button class="edhbutton">Eindhoven</button>
+                <button type=button class="mstbutton">Maastricht</button>
+                <button type=button class="eldbutton">Eelde</button>
+            </div>
+
+            <p class="showamountofpeople"></p>
+            <!-- to show the actual number of passengers-->
+
+            <i class="fas fa-male"></i>
+            <!--human icon, which changes its size depending on data-->
+        </section>
+
+        <!--second infographic-->
+        <section id="secondinfo">
+            <h1>Flights In 2018</h1>
+            <section>
+                <p>Total</p>
+                <!--move the image and data together-->
+                <div id="ALL" class="flight all">
+                    <i class="fas fa-plane"></i>
+                    <p class="lastyear LastYearFlightall"></p>
+                </div>
+            </section>
+            <!--All flights-->
+            <!--flights from Amsterdam-->
+            <section>
+
+                <p>Amsterdam</p>
+                <div id="AMS" class="flight ams">
+                    <i class="fas fa-plane"></i>
+                    <!--last year flight-->
+                    <p class="lastyear LastYearFlightams"></p>
+                </div>
+            </section>
+            <!--flights from Rotterdam-->
+            <section>
+                <p>Rotterdam</p>
+                <div id="ROT" class="flight rot">
+                    <i class="fas fa-plane"></i>
+                    <!--last year flight-->
+                    <p class="lastyear LastYearFlightrot"></p>
+                </div>
+            </section>
+            <!--flights from Eindhoven-->
+            <section>
+                <p>Eindhoven</p>
+                <div id="EDH" class="flight edh">
+                    <i class="fas fa-plane"></i>
+                    <!--last year flight-->
+                    <p class="lastyear LastYearFlightedh"></p>
+                </div>
+            </section>
+            <!--flights from Maastricht-->
+            <section>
+                <p>Maastricht</p>
+                <div id="MST" class="flight mst">
+                    <i class="fas fa-plane"></i>
+                    <!--last year flight-->
+                    <p class="lastyear LastYearFlightmst"></p>
+                </div>
+            </section>
+            <!--flights from Eelde-->
+            <section>
+                <p>Eelde</p>
+                <div id="ELD" class="flight eld">
+                    <i class="fas fa-plane"></i>
+                    <!--last year flight-->
+                    <p class="lastyear LastYearFlighteld"></p>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+</body>

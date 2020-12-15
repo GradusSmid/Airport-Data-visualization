@@ -1,0 +1,95 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*initial visibility for infographic until it is loaded */
+#present {
+    visibility: hidden;
+}
+
+.h2 {
+    visibility: hidden;
+}
+
+/* animation loading*/
+.fa-spinner {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    font-size: 50px;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+h1,
+h2,
+#buttons,
+.showamountofpeople {
+    text-align: center;
+}
+
+#secondinfo {
+    background-color: rgb(233, 235, 137);
+    width: 900px;
+    border-radius: 50px;
+    border-style: dashed;
+    padding: 10px;
+    height: 600px;
+    margin: 0 auto;
+
+}
+
+#numberpeople2018 {
+    background-color: rgb(141, 233, 141);
+    width: 900px;
+    border-radius: 50px;
+    border-style: dashed;
+    padding: 10px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+
+.fa-plane {
+    font-size: 40px;
+}
+
+.flight {
+    transition: all 5s;
+}
+
+.fa-male {
+    position: absolute;
+    transition: 1s ease-out;
+    left: 50%;
+    margin-left: -50px;
+}
+
+/* hover transition for 2017 data text that is revealed on hover */
+.lastyear {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px;
+    visibility: hidden;
+    transition: all .2s;
+}
+
+.all:hover .LastYearFlightall,
+.ams:hover .LastYearFlightams,
+.rot:hover .LastYearFlightrot,
+.edh:hover .LastYearFlightedh,
+.mst:hover .LastYearFlightmst,
+.eld:hover .LastYearFlighteld {
+    visibility: visible;
+    opacity: 1;
+}
